@@ -1,0 +1,18 @@
+plugins {
+    id 'project-conventions'
+}
+
+dependencies {
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+springBoot {
+    mainClass = 'com.reliaquest.api.ApiApplication'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21) 
+    }
+}
+

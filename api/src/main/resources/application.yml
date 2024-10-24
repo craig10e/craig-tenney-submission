@@ -1,0 +1,10 @@
+spring.application.name: employee-api
+spring.web.client.connection-timeout: 5000 # Connection timeout in milliseconds
+spring.web.client.read-timeout: 10000 # Read timeout in milliseconds
+server.port: 8111
+reliaquest.api.url: http://localhost:8112/api/v1/employee
+reliaquest.api.retry-max-attempts: 10
+reliaquest.api.retry-initial-delay: 1000
+reliaquest.api.redis-host: localhost
+reliaquest.api.redis-port: 6379
+logging.level.com.reliaquest.api: debug
